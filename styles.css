@@ -1,0 +1,106 @@
+header{
+    background-color: white;
+    /* margin-left: 51.67px; */
+}
+
+header div.heading{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+}
+
+header div div.Logo{
+    display:flex;
+    align-items: center;
+}
+
+header div .logo{
+    width: 32.42px;
+    display: inline;
+}
+
+header div .searchBar{
+    padding-left: 10px;
+    padding-right: 0px;
+    border-left: 1px solid #D4DADF;
+}
+
+header span{
+    font-size: 16px;
+    font-weight: bold;
+    text-align: center;
+    padding-left: 8px;
+}
+
+div .searchImg{
+    width: 14.02px;
+    display: inline;
+    padding-top: 4px;
+}
+
+div .searchBox{
+    padding-bottom: 1px;
+    padding-top: 5px;
+    
+}
+
+div .searchBar input::placeholder{
+    color: #A7AEBA;
+}
+
+main ul{
+    padding: 8px;
+    background-color: #D4DADF;
+    text-align: center;
+}
+
+main ul li {
+    margin-left: 24px;
+    padding-top: 12px;
+    padding-bottom:12px;
+    padding-left: 24px;
+    border: 1px solid #D4DADF;
+} 
+
+main ul li:hover {
+    background-color: #F5F7F9;
+    border: solid 1px black ;
+}
+
+main {
+    padding-bottom: 28px;
+    margin: 2px;
+    background-color: #D4DADF;
+}
+
+main div a.Add{
+    margin: 16px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 16px;
+    padding-right: 16px;
+    background-color: black;
+    color: white;
+    border-radius: 4px;
+    text-align: center;
+    font-weight: bold;
+}
+
+main div a.Add:hover{
+
+    /* background-color:#F5F7F9 ; */
+    color: white;
+	-webkit-transform: scale(1.25);
+    transform: scale(1.25);
+    border: 1px solid black;
+    font-weight: bold;
+}
+
+body div div#movies{
+    background-position: center;
+}
+
+.hide{
+    display: none;
+}

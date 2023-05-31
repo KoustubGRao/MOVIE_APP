@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOVIES WEBSITE</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="new.js" defer></script>
+</head>
+<body>
+    <header class="pt-3 pb-3 border-b-solid border-b-2 border-b-stone-400">
+        <div class="heading">
+            <div class="Logo pl-10">
+                <img class="logo" src="https://avatars.githubusercontent.com/u/26352153?s=280&v=4" alt="logo"/>
+                <span>MOVIES</span>
+            </div>
+            <div class="searchBar flex items-center">
+                <div class="searchImg">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M10.6304 6.6538C10.6304 7.24474 10.514 7.82991 10.2878 8.37587C10.0617 8.92184 9.7302 9.41791 9.3124 9.8358C8.8945 10.2536 8.39844 10.5851 7.85247 10.8113C7.30651 11.0374 6.72134 11.1538 6.13039 11.1538C5.53944 11.1538 4.95429 11.0374 4.40832 10.8113C3.86236 10.5851 3.36628 10.2536 2.94842 9.8358C2.53054 9.41791 2.19908 8.92184 1.97293 8.37587C1.74678 7.82991 1.63039 7.24474 1.63039 6.6538C1.63039 5.46032 2.1045 4.31573 2.94842 3.47182C3.79233 2.6279 4.93691 2.1538 6.13039 2.1538C7.32386 2.1538 8.46845 2.6279 9.3124 3.47182C10.1563 4.31573 10.6304 5.46032 10.6304 6.6538ZM9.8104 11.3938C8.60477 12.3298 7.08776 12.7711 5.56819 12.6279C4.04862 12.4848 2.64074 11.7679 1.63115 10.6232C0.621545 9.47851 0.0861449 7.99209 0.133925 6.46655C0.181715 4.941 0.809095 3.491 1.88835 2.41175C2.96761 1.3325 4.41759 0.705122 5.94314 0.657332C7.46869 0.609549 8.9551 1.14495 10.0998 2.15455C11.2445 3.16414 11.9614 4.57203 12.1045 6.0916C12.2477 7.61116 11.8064 9.12817 10.8704 10.3338L13.9104 13.3738C13.9841 13.4425 14.0432 13.5253 14.0842 13.6173C14.1252 13.7093 14.1472 13.8086 14.149 13.9093C14.1508 14.01 14.1322 14.11 14.0945 14.2034C14.0568 14.2968 14.0006 14.3816 13.9294 14.4528C13.8582 14.5241 13.7734 14.5802 13.68 14.6179C13.5866 14.6556 13.4866 14.6742 13.3859 14.6724C13.2852 14.6706 13.1858 14.6486 13.0939 14.6076C13.0019 14.5666 12.9191 14.5075 12.8504 14.4338L9.8104 11.3938Z" fill="#1F2A33"/>
+                    </svg>                
+                </div>
+                <form id="search-movies">
+                    <input type="text" class="searchBox ml-1 py-1" id='searchtext' placeholder="Search Movie" data-search/>
+                </form>
+            </div>
+        </div>
+    </header>
+    <div class="md:grid md:grid-cols-4 bg-slate-100">
+        <main class="border-r-2 border-r-stone-400 md:col-span-1">
+            <div class="sticky top-0 flex-col justify-between">
+                <div id="team-list">
+                    <ul class="p-2 flex-col text-sm font-bold mt-4">
+                        <li class="m-1 text-lg">
+                            <a href="#">Search Results</a>
+                        </li>
+                        <li class="m-1 text-lg">
+                            <a href="#">Core</a>
+                        </li>
+                        <li class="m-1 text-lg">
+                            <a href="#">Developers</a>
+                        </li>
+                        <li class="m-1 text-lg">
+                            <a href="#">Designers</a>
+                        </li>
+                        <li class="m-1 text-lg">
+                            <a href="#">Mentors</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="flex justify-center text-center md:pt-52">
+                    <div class="">   
+                        <a href="#" class="Add w-40 h-11">&nbsp;+Add</a>
+                    </div> 
+                </div>
+            </div>
+        </main>
+        <div id="container" class="col-span-3 grid grid-cols-3 gap-4" data-movie-container>
+            <!-- <div id="movies" class="shadow-md box-border border-2 border-black rounded-md font-bold m-1 mt-8 flex-col justify-center items-end w-48 h-56 sm:w-56 sm:h-64 md:w-64 md:h-72 hover:scale-110">
+                <img src="https://media-cdn.tripadvisor.com/media/photo-s/0c/bb/a3/97/predator-ride-in-the.jpg" class="w-48 h-40 sm:w-56 sm:h-48 md:w-64 md:h-56"/>
+                <p class="text-center">pic</p>
+            </div> -->
+        </div>
+    </div>
+    <template data-user-template>
+        <div id="movies" class="p-1  mb-1 bg-white shadow-md box-border border-2 border-black rounded-md font-bold m-1 mt-8 w-48 h-56 sm:w-56 sm:h-64 md:w-64 md:h-72 hover:scale-110">
+            <img src="" class="rounded-md w-48 h-44 sm:w-56 sm:h-52 md:w-64 md:h-60" data-movie-img/>
+            <p class="text-center" data-title></p>
+        </div>
+    </template>
+</body>
+</html>
